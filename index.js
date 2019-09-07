@@ -2,5 +2,11 @@
 import './style.css';
 
 // Write Javascript code!
-const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
+
+new Vue({
+  el: '#app',
+  data: {
+    hello: 'Hello World',
+    showName: true
+  }
+})
